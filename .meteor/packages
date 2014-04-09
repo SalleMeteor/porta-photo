@@ -6,3 +6,7 @@
 standard-app-packages
 autopublish
 insecure
+<<<<<<< HEAD
+=======
+preserve-inputs
+>>>>>>> 4bd80c410dba7cea3d43827fd068addc2962a895
