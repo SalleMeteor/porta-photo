@@ -1,0 +1,20 @@
+<template name="home">
+  <h1>Hompage</h1>
+  
+  {{loginButtons}}
+  
+  {{#if currentUser}}
+  
+    {{#if page "view1"}}
+      {{> view1 }}
+    {{else}} {{#if page "view2"}}
+      {{> view2 }}
+    {{else}}
+      <p>page not found</p>
+    {{/if}}{{/if}}
+  
+  {{else}}
+    <h3>You need to login to continue</h3>  
+  {{/if}}
+  
+</template>
