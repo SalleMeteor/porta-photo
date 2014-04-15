@@ -1,0 +1,12 @@
+/* CSS declarations go here */
+h1 {
+  color: red;
+}
+
+input#messageBox{
+  width:400px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}

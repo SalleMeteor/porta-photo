@@ -4,9 +4,12 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
-insecure
-<<<<<<< HEAD
-=======
 bootstrap
->>>>>>> 92abc61cbef6f37639391624a1d79267d5dc4f3f
+iron-router
+nprogress
+bootstrap-3
+accounts-base
+accounts-password
+accounts-ui
+insecure
+autopublish

@@ -1,0 +1,23 @@
+<template name="contacts">
+  <h1>Show all contacts:</h1>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Age</th>
+    </tr>
+    {{#each contact}}    
+      <tr>
+        <td>{{name}}</td>
+        <td>{{surname}}</td>
+        <td>{{age}}</td>
+      </tr>
+    {{/each}}  
+  </table>  
+  <br/>
+  
+  Name: <input id="name" type="text" /><br/>
+  <input id="button" class="btn btn-primary" type="button" value="Show contact" />
+  
+</template>
