@@ -1,20 +1,8 @@
 <template name="chat">
-  <h1>Hompage</h1>
+  <h1>Hello World from chat!</h1>
+  {{greeting}}
   {{> entry}}
+  <input id="gohome" class="btn btn-primary" type="button" value="Go home" /> 
   {{> messages}}
-</template>
-
-<template name="entry">
-  <p><input type="text" id="name" placeholder="Your Name"> 
-    <input type="text" id="messageBox" phaceholder="Your message"></p>
-</template>
-
-<template name="messages">
-  {{#each messages}}
-    {{>message}}
-  {{/each}}
-</template>
-
-<template name="message">
-  <p><strong>{{name}}:</strong> {{message}}</p>
+  
 </template>

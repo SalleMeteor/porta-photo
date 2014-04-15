@@ -113,4 +113,7 @@ Router.map(function () {
       // before a new route is run
     }
   });
+  this.route('chat', {
+    path: '/chat'
+  });
 });

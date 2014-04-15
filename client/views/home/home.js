@@ -16,3 +16,11 @@ Template.home.events({
     Router.go("contacts");
   }
 });
+
+Template.home.events({
+  'click #chat': function () {
+    if (typeof console !== 'undefined')
+      console.log("You pressed the button");
+    Router.go("chat");
+  }
+});

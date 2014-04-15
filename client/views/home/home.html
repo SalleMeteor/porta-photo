@@ -7,13 +7,20 @@
   
     {{#if page "view1"}}
       {{> view1 }}
-    {{else}} {{#if page "view2"}}
-      {{> view2 }}
     {{else}}
-      <p>page not found</p>
-    {{/if}}{{/if}}
+      {{#if page "view2"}}
+        {{> view2 }}
+      {{else}}
+        {{#if page "chat"}}
+          {{> chat }}
+        {{else}}
+          <p>page not found</p>
+        {{/if}}
+      {{/if}}
+    {{/if}}
   
     <input id="contacts" class="btn btn-primary" type="button" value="Show contacts" />
+    <input id="chat" class="btn btn-primary" type="button" value="Chat" />
   
   {{else}}
     <h3>You need to login to continue</h3>  
