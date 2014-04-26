@@ -1,0 +1,16 @@
+<template name="categories">
+  <div id="categories" class="btn-group">
+    {{#if new_cat}}
+    <div class="category">
+      <input type="text" id="add-category" value="" />
+    </div>
+    {{else}}
+    <div class="category btn btn-inverse" id="btnNewCat">&plus;</div>
+    {{/if}}
+      {{#each favoritos}}
+        <div class="category btn btn-inverse">
+          {{Category}}
+        </div>
+      {{/each}}
+  </div>
+</template>

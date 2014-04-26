@@ -1,10 +1,9 @@
 <template name="home">
-  <h1>Hompage</h1>
+  <h1>Home Chat</h1>
   
   {{> loginButtons}}
   
   {{#if currentUser}}
-  
     {{#if page "view1"}}
       {{> view1 }}
     {{else}}
@@ -18,9 +17,12 @@
         {{/if}}
       {{/if}}
     {{/if}}
-  
+    
+    <!--
     <input id="contacts" class="btn btn-primary" type="button" value="Show contacts" />
     <input id="chat" class="btn btn-primary" type="button" value="Chat" />
+    <input id="rooms" class="btn btn-primary" type="button" value="Rooms" />
+    -->
   
   {{else}}
     <h3>You need to login to continue</h3>  

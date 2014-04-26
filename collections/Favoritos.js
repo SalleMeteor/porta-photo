@@ -1,0 +1,1 @@
+Favoritos = new Meteor.Collection("favoritos");

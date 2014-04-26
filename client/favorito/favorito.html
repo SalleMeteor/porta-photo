@@ -1,0 +1,24 @@
+<template name="favorito">
+  <ul id="lending_favorito">
+    {{#each items}}
+    <li class="lending_item alert">
+      <button type="button" class="close delete_item" id="{{User}}">x</button>
+      {{User}}
+      {{#if lendee_editing}}
+      <input type="text" id="edit_lendee" class="span2 pull right" value=""/>
+      {{else}}
+      <div class="lendee pull-right label {{LendClass}}">{{Lendee}}</div>
+      {{/if}}
+    </li>
+    {{/each}}
+    {{#if favorito_selected}}
+    <li class="alert_success" id="btnAddItem">&plus;
+      {{#if favorito_adding}}
+      <input class="span4" id="item_to_add" size="32" type="text">
+      {{/if}}
+    </li>
+    {{/if}}
+  </ul>
+</template>
+                  
+        

@@ -45,7 +45,8 @@ Template.chat.events[okcancel_events('#messageBox')] = make_okcancel_handler({
   ok: function(text, event){
     var nameEntry = document.getElementById('name');
     var ts = Date.now() / 1000;
-    Messages.insert({name: nameEntry.value, message: text, time: ts});
+    var room = room;
+    Messages.insert({name: nameEntry.value, message: text, time: ts, room:room});
     event.target.value = "";
   }
 });

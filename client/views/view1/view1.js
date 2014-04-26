@@ -1,5 +1,6 @@
+/*
 Template.view1.greeting = function () {
-  return "Welcome to myfirstapp.";
+  return "Bienvenido";
 };
 
 Template.view1.events({
@@ -28,3 +29,4 @@ Template.view1.events({
     console.log("result(sync): ", result);
   }
 });
+*/

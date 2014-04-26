@@ -1,3 +1,7 @@
+Template.home.greeting = function () {
+  return "Bienvenido al nuevo chat ";
+};
+
 Template.home.created = function () {
   Session.set("currentPage", "view1");
   //Meteor.subscribe("allContacts");
@@ -22,5 +26,13 @@ Template.home.events({
     if (typeof console !== 'undefined')
       console.log("You pressed the button");
     Router.go("chat");
+  }
+});
+
+Template.home.events({
+  'click #rooms': function () {
+    if (typeof console !== 'undefined')
+      console.log("You pressed the button");
+    Router.go("rooms");
   }
 });
