@@ -1,5 +1,5 @@
 Template.home.greeting = function () {
-  return "Bienvenido al nuevo chat ";
+  return "Bienvenido a la Filmoteca";
 };
 
 Template.home.created = function () {
@@ -14,14 +14,6 @@ Template.home.helpers({
 });
 
 Template.home.events({
-  'click #contacts': function () {
-    if (typeof console !== 'undefined')
-      console.log("You pressed the button");
-    Router.go("contacts");
-  }
-});
-
-Template.home.events({
   'click #chat': function () {
     if (typeof console !== 'undefined')
       console.log("You pressed the button");
@@ -29,10 +21,3 @@ Template.home.events({
   }
 });
 
-Template.home.events({
-  'click #rooms': function () {
-    if (typeof console !== 'undefined')
-      console.log("You pressed the button");
-    Router.go("rooms");
-  }
-});

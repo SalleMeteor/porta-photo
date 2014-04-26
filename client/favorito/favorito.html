@@ -2,17 +2,17 @@
   <ul id="lending_favorito">
     {{#each items}}
     <li class="lending_item alert">
-      <button type="button" class="close delete_item" id="{{User}}">x</button>
-      {{User}}
+      <button type="button" class="close delete_item" id="{{Nombre}}" style="right:-10px">x</button>
+      {{Nombre}}
       {{#if lendee_editing}}
-      <input type="text" id="edit_lendee" class="span2 pull right" value=""/>
+      <input type="text" id="edit_lendee" class="span2 pull-right" value=""/>
       {{else}}
-      <div class="lendee pull-right label {{LendClass}}">{{Lendee}}</div>
+      <div id="lendee" class="lendee pull-right label {{LendClass}}">{{Lendee}}</div>
       {{/if}}
     </li>
     {{/each}}
     {{#if favorito_selected}}
-    <li class="alert_success" id="btnAddItem">&plus;
+    <li class="alert-success" id="btnAddItem">&plus;
       {{#if favorito_adding}}
       <input class="span4" id="item_to_add" size="32" type="text">
       {{/if}}

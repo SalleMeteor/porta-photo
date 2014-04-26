@@ -32,8 +32,9 @@ Template.categories.events({
   },
   
   // Oculta fuera del campo de texto, lo ocultamos
-  'focusout #add-category': function(e,t){ Session.set('adding_category', false);}
-  
+  'focusout #add-category': function(e,t){ Session.set('adding_category', false);
+                                         },
+  'click.category':selectCategory
 });
 
   
@@ -43,6 +44,8 @@ Template.categories.events({
 function focusText(i){
   i.focus();
   i.select();
-};
-                              
-                                   
+};                       
+
+function selectCategory(e,t){
+  Session.set('current_favorito',this._id);
+}                               

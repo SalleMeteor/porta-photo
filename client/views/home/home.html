@@ -1,26 +1,23 @@
 <template name="home">
-  <h1>Home Chat</h1>
+  <h1>Filmoteca</h1>
   
   {{> loginButtons}}
   
   {{#if currentUser}}
+    <button type="button" class="btn btn-primary" id="chat">Chat</button>
     {{#if page "view1"}}
       {{> view1 }}
     {{else}}
-      {{#if page "view2"}}
-        {{> view2 }}
+      {{#if page "chat"}}
+        {{> chat }}
       {{else}}
-        {{#if page "chat"}}
-          {{> chat }}
-        {{else}}
-          <p>page not found</p>
-        {{/if}}
+        <p>page not found</p>
       {{/if}}
     {{/if}}
     
+    
     <!--
     <input id="contacts" class="btn btn-primary" type="button" value="Show contacts" />
-    <input id="chat" class="btn btn-primary" type="button" value="Chat" />
     <input id="rooms" class="btn btn-primary" type="button" value="Rooms" />
     -->
   
