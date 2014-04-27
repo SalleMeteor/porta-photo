@@ -24,3 +24,5 @@ Router.map(function () {
   });
   
 });
+
+Router.onBeforeAction('loading');
